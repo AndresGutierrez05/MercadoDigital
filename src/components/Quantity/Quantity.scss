@@ -1,0 +1,23 @@
+@use "sass:map";
+@use "../../commonstyles.scss" as common;
+
+.quantity{
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: map.get(common.$theme-colors, "purple");
+    border-radius: 50%;
+    box-shadow: 0 0 3px 3px map.get(common.$theme-colors, "orange");
+
+    .quantity-value{
+        height: inherit;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        span{
+            font-size: x-large;
+            font-weight: bold;
+        }
+    }
+}

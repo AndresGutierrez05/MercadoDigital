@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image product component test 1`] = `
+<div
+  className="container-image"
+>
+  <div
+    className="image"
+  >
+    <img />
+  </div>
+</div>
+`;

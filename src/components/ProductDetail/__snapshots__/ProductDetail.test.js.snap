@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product detail component Product detail first product component test 1`] = `
+Array [
+  <div
+    className="product-detail"
+  >
+    <h2>
+      Detalle del producto
+    </h2>
+    <hr />
+    <div
+      className="product-selected"
+    >
+      <div
+        className="product-selected-img"
+      >
+        <div
+          className="container-image"
+        >
+          <div
+            className="image"
+          >
+            <img
+              alt="Atún en Lata"
+              src="https://copservir.vtexassets.com/arquivos/ids/773477-800-auto?v=637951138022000000"
+            />
+          </div>
+        </div>
+      </div>
+      <br />
+      <div
+        className="product-selected-general"
+      >
+        <div
+          className="product-selected-info"
+        >
+          <h3>
+            Atún en Lata
+              
+            <label>
+              $
+              5400
+            </label>
+          </h3>
+        </div>
+        <div
+          className="product-selected-add-subtract"
+        >
+          <img
+            alt="Restar"
+            onClick={[Function]}
+            src="/icons/minus.png"
+          />
+          <img
+            alt="Sumar"
+            onClick={[Function]}
+            src="/icons/plus.png"
+          />
+        </div>
+      </div>
+      <hr />
+      Atún en agua
+      <hr />
+    </div>
+  </div>,
+  ",",
+]
+`;
+
+exports[`Product detail component default component test (nomal-size) 1`] = `
+Array [
+  <div
+    className="product-detail"
+  >
+    <h2>
+      Detalle del producto
+    </h2>
+    <hr />
+    <p>
+      Por favor seleccione un producto de la parte 
+      izquierda
+       para ver su detalle y asignar mas
+    </p>
+  </div>,
+  ",",
+]
+`;
+
+exports[`Product detail component default component test (phone-size) 1`] = `
+Array [
+  <div
+    className="product-detail"
+  >
+    <h2>
+      Detalle del producto
+    </h2>
+    <hr />
+    <p>
+      Por favor seleccione un producto de la parte 
+      de arriba
+       para ver su detalle y asignar mas
+    </p>
+  </div>,
+  ",",
+]
+`;

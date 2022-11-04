@@ -1,0 +1,28 @@
+@use "sass:map";
+@use "./commonstyles.scss" as common;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Idealist Sans Light', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: map.get(common.$theme-colors, "purple");
+  border-radius: 5px;
+}

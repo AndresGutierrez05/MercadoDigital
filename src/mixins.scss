@@ -1,0 +1,37 @@
+@use "sass:map";
+@use "./commonstyles.scss" as common;
+
+@mixin commonProductsContainer(){
+    padding: 30px;
+  
+    @media screen and (max-width: common.$small) {
+      padding: 5px;
+    }
+    @media screen and (max-width: common.$medium) {
+      padding: 10px;
+    }
+
+    h2, h3{
+      color: map.get(common.$theme-colors, "gray");
+
+      @media screen and (max-width: common.$small) {
+        font-size: small;
+      }
+      @media screen and (max-width: common.$medium) {
+        font-size: large;
+      }
+    }
+
+    p{
+      @media screen and (max-width: common.$medium) {
+        font-size: smaller;
+      }
+    }
+    
+    hr{
+      opacity: 0.5;
+      border: 1px solid map.get(common.$theme-colors, "purple");
+      border-radius: 1px;
+      box-shadow: 0 0 0.1px 0.1px map.get(common.$theme-colors, "background-blue");
+    }
+  }

@@ -1,0 +1,62 @@
+@use "sass:map";
+@use "../../mixins.scss";
+@use "../../commonstyles.scss" as common;
+
+.store-products{
+    width: 60%;
+
+    @media screen and (max-width: common.$medium) {
+        width: 100%;
+    }
+
+    @include mixins.commonProductsContainer;
+
+    .content-images{
+        max-height: 75vh;
+        overflow-y: auto;
+        
+        @media screen and (max-width: common.$medium) {
+            display: flex;
+            max-height: 200px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+
+        input{
+            display: none;
+        }
+
+        .product-container{
+            max-width:250px;
+            margin: 10px;
+            float: left;
+
+            @media screen and (max-width: common.$medium) {
+                width: 150px;
+                margin: 5px;
+            }
+        }
+        
+        label img {
+            width: 100%;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid map.get(common.$theme-colors, "primary-blue");
+            cursor: pointer;
+
+            @media screen and (max-width: common.$small) {
+                width: 100px;
+                margin: 5px;
+            }
+            @media screen and (max-width: common.$medium) {
+                width: 150px;
+                margin: 5px;
+            }
+        }
+ 
+        :checked + label img {
+            box-shadow: 0 0 3px 3px map.get(common.$theme-colors, "primary-blue");
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@use "../../mixins.scss";
+@use "sass:map";
+@use "../../commonstyles.scss" as common;
+
+.product-detail{
+    width: 40%;
+
+    @media screen and (max-width: common.$medium) {
+        width: 100%;
+    }
+
+    @include mixins.commonProductsContainer;
+
+    .product-selected-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .container-image{
+            width: 350px;
+            height: 350px;
+
+            @media screen and (max-width: common.$medium) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .product-selected-general{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        label{
+            color: map.get(common.$theme-colors, "purple");
+        }
+
+        .product-selected-add-subtract{
+            height: 100%;
+            align-self: center;
+        }
+
+        img{
+            width: 32px;
+            padding: 5px;
+            cursor: pointer;
+
+            &:hover{
+                background: map.get(common.$theme-colors, "orange");
+            }
+        }
+    }
+}

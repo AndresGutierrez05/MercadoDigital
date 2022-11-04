@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShoppingCart component component with first product(2) on the cart, totalPrice must to be > $0 1`] = `
+Array [
+  <div
+    className="cart-container"
+  >
+    <div
+      className="cart-container-right"
+    >
+      <div
+        className="cart-button"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <div
+          className="cart-button-img"
+        >
+          <img
+            alt="carrito"
+            src="/icons/cart.png"
+          />
+        </div>
+        <div>
+          <p
+            className="totalPrice"
+          >
+            $
+            10800
+          </p>
+        </div>
+      </div>
+      <div
+        className="cart-summary"
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      >
+        <h2>
+          Carrito
+        </h2>
+        <hr />
+        <div
+          className="cart-summary-products"
+        >
+          <div>
+            <div
+              className="cart-summary-product"
+            >
+              <div
+                className="quantity"
+              >
+                <div
+                  className="quantity-value"
+                >
+                  <span>
+                    2
+                  </span>
+                </div>
+              </div>
+              <img
+                alt="Atún en Lata"
+                src="https://copservir.vtexassets.com/arquivos/ids/773477-800-auto?v=637951138022000000"
+              />
+            </div>
+            <hr />
+          </div>
+        </div>
+        <div
+          className="cart-total"
+        >
+          <div>
+            <form
+              action="https://checkout.wompi.co/p/"
+              method="GET"
+            >
+              <input
+                name="public-key"
+                type="hidden"
+                value="pub_test_X0zDA9xoKdePzhd8a0x9HAez7HgGO2fH"
+              />
+              <input
+                name="currency"
+                type="hidden"
+                value="COP"
+              />
+              <input
+                name="amount-in-cents"
+                type="hidden"
+                value="1080000"
+              />
+              <input
+                name="reference"
+                type="hidden"
+                value="4XMPGKWWPKWQ"
+              />
+              <input
+                name="signature-integrity"
+                type="hidden"
+                value="37c8407747e595535433ef8f6a811d853cd943046624a0ec04662b17bbf33bf5"
+              />
+              <button
+                type="submit"
+              >
+                Paga con 
+                <strong>
+                  Wompi
+                </strong>
+              </button>
+            </form>
+          </div>
+          <h3>
+            Total : $
+            10800
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>,
+  ",",
+]
+`;
+
+exports[`ShoppingCart component default component without product added on cart, totalPrice must to be $0 1`] = `
+Array [
+  <div
+    className="cart-container"
+  >
+    <div
+      className="cart-container-right"
+    >
+      <div
+        className="cart-button"
+        onClick={null}
+        onMouseEnter={null}
+      >
+        <div
+          className="cart-button-img"
+        >
+          <img
+            alt="carrito"
+            src="/icons/cart.png"
+          />
+        </div>
+        <div>
+          <p
+            className="totalPrice"
+          >
+            $
+            0
+          </p>
+        </div>
+      </div>
+      <div
+        className="cart-summary"
+        onMouseLeave={[Function]}
+        style={
+          Object {
+            "display": "none",
+          }
+        }
+      >
+        <h2>
+          Carrito
+        </h2>
+        <hr />
+        <div
+          className="cart-summary-products"
+        />
+        <div
+          className="cart-total"
+        >
+          <div>
+            <form
+              action="https://checkout.wompi.co/p/"
+              method="GET"
+            >
+              <input
+                name="public-key"
+                type="hidden"
+                value="pub_test_X0zDA9xoKdePzhd8a0x9HAez7HgGO2fH"
+              />
+              <input
+                name="currency"
+                type="hidden"
+                value="COP"
+              />
+              <input
+                name="amount-in-cents"
+                type="hidden"
+                value="000"
+              />
+              <input
+                name="reference"
+                type="hidden"
+                value="4XMPGKWWPKWQ"
+              />
+              <input
+                name="signature-integrity"
+                type="hidden"
+                value="37c8407747e595535433ef8f6a811d853cd943046624a0ec04662b17bbf33bf5"
+              />
+              <button
+                type="submit"
+              >
+                Paga con 
+                <strong>
+                  Wompi
+                </strong>
+              </button>
+            </form>
+          </div>
+          <h3>
+            Total : $
+            0
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>,
+  ",",
+]
+`;

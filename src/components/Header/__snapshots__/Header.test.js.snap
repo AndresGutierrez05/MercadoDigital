@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component test 1`] = `
+<header>
+  <div
+    className="header-nav"
+  >
+    <img
+      alt="MercadoDigital"
+      src="/Images/EsloganMercadoDigital.png"
+    />
+  </div>
+  <hr />
+</header>
+`;
